@@ -3,7 +3,7 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.sp.bdi2.dao.UserInfoMapper">
-	<select id="selectUserInfoList" resultType="map">
+	<select id="selectUserInfoList" resultType="user">
 		select * from user_info
 	</select>
 </mapper>

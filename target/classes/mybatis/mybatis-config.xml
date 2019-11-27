@@ -3,6 +3,12 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+  <settings>
+  	<setting name="mapUnderscoreToCamelCase" value="true"></setting>
+  </settings>
+  <typeAliases>
+  	<typeAlias type="com.sp.bdi2.user.UserVO" alias="user"></typeAlias>
+  </typeAliases>
   <mappers>
     <mapper resource="mybatis/mapper/user-info.xml" />
   </mappers>
