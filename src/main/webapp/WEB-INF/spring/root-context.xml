@@ -10,4 +10,9 @@
 		<property name="username" value="bdi"></property>
 		<property name="password" value="12345678"></property>
 	</bean>	
+	
+	<bean id="ssfb" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="bds"></property>
+		<property name="configLocation" value="classpath:/mybatis/mybatis-config.xml"></property>
+	</bean>
 </beans>
